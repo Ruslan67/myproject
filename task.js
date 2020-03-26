@@ -1,4 +1,12 @@
 console.log("hello word");
 
-var input1 = document.getElementById("text1").value;
-console.log(input1);
+function sent(event) {
+    const text1 = document.getElementById("text1")
+    const kod = document.getElementById("kod")
+    const weight = document.getElementById("weight")
+    console.log(text1.value, password.value, weight.value);
+
+
+
+
+}
