@@ -12,8 +12,8 @@ function sent(event) {
     container.appendChild(newDiv);
     newDiv.textContent = text1 + ' ' + kod + ' ' + weight;
 
-
-
-
 }
-// rtrte
+
+function reset(event) {
+    container.removeChild(newDiv);
+}
