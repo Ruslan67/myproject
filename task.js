@@ -9,9 +9,14 @@ function sent(event) {
     const newDiv = document.createElement("div"); // создает новый элемент div
     const container = document.getElementById("container") // забирает значение а container в переменную container
     container.appendChild(newDiv); //создается потомок от container newDiv
-    newDiv.textContent = text1.value + ' ' + kod.value + ' ' + weight.value; //выводятся значения трех переменных в newDiv
+    newDiv.classList.add("list-group-horizontal");
+    newDiv.classList.add("list-group-item");
+    newDiv.textContent = text1.value + ' ' + kod.value + ' ' + weight.value;
+    //выводятся значения трех переменных в newDiv
     const button = document.createElement("button") // создается кнопка
-    button.textContent = "delete"; // на кнопке пишем delete
+    button.textContent = "удавить"; // на кнопке пишем delete
+    button.classList.add("btn");
+    button.classList.add("btn-danger");
     newDiv.appendChild(button); // делаем newDiv потомком button
     button.onclick = function() {
             container.removeChild(newDiv)

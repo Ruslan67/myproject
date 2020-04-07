@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8">
     <link href="./task.css" rel="stylesheet">
 </head>
@@ -9,17 +10,17 @@
 <body>
     <form>
         <b>Ваше имя:</b><br>
-        <input type="text" size="40" id="text1">
+        <input class="form-control" type="text" size="40" id="text1">
         <Br>
         <b>Введите пароль:</b><br>
-        <input type="password" size="40" id="kod">
+        <input class="form-control" type="password" size="40" id="kod">
         <Br>
         <b> <b>Введите вес:</b><br></b>
         <br>
-        <input type="number" size="40" id="weight">
+        <input class="form-control" type="number" size="40" id="weight">
         <Br>
-        <p><input onclick="return sent();" type="button" value="Отправить">
-            <input onclick="return reset();" type="button" value="Очистить"></p>
+        <p><input class="btn btn-success" onclick="return sent();" type="button" value="Отправить">
+            <input class="btn btn-success" onclick="return reset();" type="button" value="Очистить"></p>
         <div id="container"> </div>
     </form>
 
