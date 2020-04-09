@@ -11,11 +11,7 @@ function sent(event) {
     container.appendChild(newDiv); //создается потомок от container newDiv
     newDiv.classList.add("list-group-horizontal");
     newDiv.classList.add("list-group-item");
-    .box {
-        display: flex;
-        justify - content: space - between.wight: 100 %
-    }
-    //newDive.classList.add("box");
+    newDive.classList.add("box");
     newDiv.textContent = text1.value + ' ' + kod.value + ' ' + weight.value;
     //выводятся значения трех переменных в newDiv
     const button = document.createElement("button") // создается кнопка
