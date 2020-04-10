@@ -11,9 +11,20 @@ function sent(event) {
     container.appendChild(newDiv); //создается потомок от container newDiv
     newDiv.classList.add("list-group-horizontal");
     newDiv.classList.add("list-group-item");
-    newDive.classList.add("box");
+    newDiv.classList.add("box");
     newDiv.textContent = text1.value + ' ' + kod.value + ' ' + weight.value;
     //выводятся значения трех переменных в newDiv
+    localStorage.setItem('myCat', 'Tom');
+    'myCat' => 'users';
+    'Tom' => [];
+    const array = localStorage.getItem('users') || [];
+    let array = localStorage.getItem('users');
+    if (!array) { array = [] }
+    localStorage.setItem('users', {
+        text: text1.value,
+        weight: weight.value,
+        kod: weight.value
+    });
     const button = document.createElement("button") // создается кнопка
     button.textContent = "удавить"; // на кнопке пишем delete
     button.classList.add("btn");
