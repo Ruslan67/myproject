@@ -14,11 +14,9 @@ function sent(event) {
     newDiv.classList.add("box");
     newDiv.textContent = text1.value + ' ' + kod.value + ' ' + weight.value;
     //выводятся значения трех переменных в newDiv
-    localStorage.setItem('myCat', 'Tom');
-    'myCat' => 'users';
-    'Tom' => [];
+    localStorage.setItem('users', '[]');
     const array = localStorage.getItem('users') || [];
-    let array = localStorage.getItem('users');
+    //let array = localStorage.getItem('users');
     if (!array) { array = [] }
     localStorage.setItem('users', {
         text: text1.value,
